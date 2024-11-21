@@ -1,5 +1,3 @@
-![Imagem de capa do curso. O título é "3486 - Acessibilidade em HTML, CSS e JavaScript" e o subtítulo é "Avaliando e melhorando um projeto com o NVDA".](./thumb.png)
-
 # VidFlow
 
 O VidFlow é uma plataforma de compartilhamento de vídeos.
@@ -9,8 +7,6 @@ O VidFlow é uma plataforma de compartilhamento de vídeos.
 ## 🔨 Funcionalidades do projeto
 
 Atualmente, o projeto base já está pronto: os vídeos são buscados de uma API, possui modo escuro e os botões interativos funcionam.
-
-No entanto, o projeto possui problemas de acessibilidade, e iremos utilizar o NVDA para indetificá-los e corrigi-los.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
