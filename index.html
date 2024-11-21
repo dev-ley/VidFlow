@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>VidFlow</title>
+    <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1 class="visualmente-escondido">Vidflow</h1>
+
+        <div class="cabecalho__container">
+            <a href="/" class="logo__item">
+                <img src="./img/modo_claro/vidflow-logo-light-mode.png" alt="Página inicial do VidFlow">
+            </a>
+
+            <div class="cabecalho__pesquisar__item">
+                <form role="search" class="form__pesquisa">
+                    <input aria-label="Pesquisar vídeos" type="search" class="pesquisar__input" placeholder="Pesquisar">
+
+                    <img src="./img/modo_claro/menu_superior/keyboard.svg" alt="" class="pesquisar__input-teclado">
+                    
+                    <button class="pesquisar__btn">
+                        <img src="./img/modo_claro/menu_superior/search.svg" alt="ícone de lupa">
+                    </button>
+                </form>
+            </div>
+
+            <div class="secao-links-e-botao-switch">
+                <ul aria-label="Links do cabeçalho" class="cabecalho__links">
+                    <li>
+                        <a aria-label="Criar vídeo" title="Criar vídeo" href="#" class="cabecalho__videos"></a>
+                    </li>
+    
+                    <li>
+                        <a aria-label="Aplicativos" title="Aplicativos" href="#" class="cabecalho__apps"></a>
+                    </li>
+    
+                    <li>
+                        <a aria-label="Notificações" title="Notificações" href="#" class="cabecalho__notificacoes"></a>
+                    </li>
+    
+                    <li>
+                        <a aria-label="Perfil de usuário" title="Perfil de usuário" href="#" class="cabecalho__avatar"></a>
+                    </li>
+                </ul>
+    
+                <label aria-label="Alternar modo escuro" title="Alternar modo escuro" class="cabecalho__switch">
+                    <input type="checkbox" class="cabecalho__switch-input">
+                    <span class="cabecalho__switch-slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Menu lateral -->
+
+    <div class="menu__container-wrapper">
+        <aside class="menu__container">
+            <section aria-label="Links principais" class="menu__secao">
+                <ul class="menu__lista menu__links-principais">
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__inicio"></i>
+                            <span>Início</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__explorar"></i>
+                            <span>Explorar</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__shorts"></i>
+                            <span>Shorts</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__inscricoes"></i>
+                            <span>Inscrições</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__biblioteca"></i>
+                            <span>Biblioteca</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-label="Links para vídeos guardados na conta" class="menu__secao">
+                <ul class="menu__lista">
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__historico"></i>
+                            <span>Histórico</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__relogio"></i>
+                            <span>Assistir mais tarde</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="menu__itens" href="#">
+                            <i class="icone__like"></i>
+                            <span>Marcados com like</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="texto-inscricoes" class="menu__secao">
+                <span id="texto-inscricoes" class="menu__secao-titulo">Inscrições</span>
+
+                <ul id="menu__canais" class="menu__lista">
+                    <li class="menu__canal">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__alura"></i>
+                            <span>Alura</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__gaveta"></i>
+                            <span>Gaveta</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__ballerini"></i>
+                            <span>Rafaella Ballerini</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__iamarino"></i>
+                            <span>Atila Iamarino</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__souto"></i>
+                            <span>Mario Souto</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal escondido">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__nerd"></i>
+                            <span>Jovem Nerd</span>
+                        </a>
+                    </li>
+
+                    <li class="menu__canal escondido">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__deschamps"></i>
+                            <span>Felipe Deschamps</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button aria-expanded="false" aria-controls="menu__canais" class="menu__itens menu__botao-expandir-canais">
+                    <i class="icone__mostrar"></i>
+                    <span class="texto-colapsar-canais">Mostrar mais 2</span>
+                </button>
+            </section>
+
+            <section aria-labelledby="titulo-mais-da-pagina" class="menu__secao">
+                <span id="titulo-mais-da-pagina" class="menu__secao-titulo">
+                    Mais da página
+                </span>
+
+                <ul class="menu__lista">
+                    <li class="premium">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__videos"></i>
+                            <span>Vídeo Premium</span></a>
+                    </li>
+
+                    <li class="filmes">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__filmes"></i>
+                            <span>Filmes</span></a>
+                    </li>
+
+                    <li class="jogos">
+                        <a class="menu__itens" href="#">
+                            <i class="icone__jogos"></i>
+                            <span>Jogos</span></a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <main>
+        <h2 class="visualmente-escondido">Seção de vídeos</h2>
+
+        <div role="tablist" class="superior__secao__container">
+            <button id="botao-tudo" role="tab" tabindex="0" aria-controls="painel-videos" aria-selected="true" name="Tudo" class="botao-categoria selecionado">
+                Tudo
+            </button>
+
+            <button id="botao-debates" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Debates" class="botao-categoria">
+                Debates
+            </button>
+
+            <button id="botao-ao-vivo" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Ao Vivo" class="botao-categoria">
+                Ao Vivo
+            </button>
+
+            <button id="botao-podcasts" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Podcasts" class="botao-categoria">
+                Podcasts
+            </button>
+
+            <button id="botao-front-end" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Front-end" class="botao-categoria">
+                Front-end
+            </button>
+
+            <button id="botao-mobile" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Mobile" class="botao-categoria">
+                Mobile
+            </button>
+
+            <button id="botao-data-science" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Data Science" class="botao-categoria">
+                Data Science
+            </button>
+
+            <button id="botao-apps" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Apps" class="botao-categoria">
+                Apps
+            </button>
+
+            <button id="botao-programacao" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Programação" class="botao-categoria">
+                Programação
+            </button>
+
+            <button id="botao-inteligencia-artificial" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Inteligência Artificial" class="botao-categoria">
+                Inteligência Artificial
+            </button>
+            <button id="botao-inovacao" role="tab" tabindex="-1" aria-controls="painel-videos" aria-selected="false" name="Inovação" class="botao-categoria">
+                Inovação
+            </button>
+        </div>
+
+        <div id="painel-videos" role="tabpanel" aria-labelledby="botao-tudo">
+            <ul class="videos__container">
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
